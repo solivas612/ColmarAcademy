@@ -1,13 +1,94 @@
 /* Universal Styles */
+html {
+  font-size: 16px;
+}
+
+.header, .footer, .banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options span {
+  padding-left: 1rem;
+}
+
+.left {
+  width: 60%;
+}
+
+.left img {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+.alt {
+  background-color: lightgray;
+}
 
 /* Header Section */
 
+.header {
+  height: 4rem;
+}
+
+.mobile {
+  display: none;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+  /* Header Mobile Section */
+
 /* Banner Section */
+
+.landing .button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+  /* Banner Mobile Section */
 
 /* Welcome Section */
 
+  /* Welcome Mobile Section */
+
 /* Start Learning Section */
+
+  /* SL Mobile Section */
 
 /* Thesis Exhibit Section */
 
+  /* Thesis Mobile Section */
+
 /* Footer Section */
+
+.footer {
+  height: 8rem;
+}
+
+  /* Footer Mobile Section */
