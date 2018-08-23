@@ -84,6 +84,11 @@ html {
   width: 65%;
 }
 
+.about .info p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .title {
   text-align: center;
   padding-top: 2rem;
@@ -95,8 +100,36 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+h2, h3, h5, p {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
 .alt {
   background-color: lightgray;
+}
+
+@@media only screen and (max-width: 875px) {
+  .dsktp {
+    display: none;
+  }
 }
 
 /* Header Section */
@@ -107,10 +140,6 @@ h1, h2, h3, h4 {
 
 .mobile {
   display: none;
-}
-
-h3 {
-  font-size: 2rem;
 }
 
 .options.headers {
@@ -130,6 +159,7 @@ h3 {
 
 .information.landing {
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .landing .button {
@@ -138,6 +168,9 @@ h3 {
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
   /* Banner Mobile Section */
@@ -167,11 +200,16 @@ h3 {
 .degrees {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-content: stretch;
+}
+
+.degrees.one {
+  padding-bottom: 2rem;
 }
 
 .degree {
   width: 30%;
+  background-color: white;
 }
 
 .degree img {
@@ -205,6 +243,10 @@ h3 {
 
 .thesis-exhibit {
   display: block;
+}
+
+.exhibit {
+  align-items: flex-start;
 }
 
 .urban {
