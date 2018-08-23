@@ -1,9 +1,33 @@
 /* Universal Styles */
+
+  /* latin */
+  @font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* latin */
+  @font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v12/rax8HiqOu8IVPmn7f4xp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 html {
   font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.header, .footer, .banner {
+.header, .footer {
+  font-family: "Bitter", sans-serif
+}
+
+.header, .footer, .about, .exhibit {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,11 +53,41 @@ html {
   padding-left: 1rem;
 }
 
-.left {
-  width: 60%;
+.welcome, .about {
+  display: flex;
 }
 
-.left img {
+.media {
+  padding: 2rem 1.5rem;
+  max-width: 60%;
+}
+
+.media img {
+  width: 100%;
+}
+
+.information {
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.about .image {
+  min-width: 35%;
+  padding: 1rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .info {
+  width: 65%;
+}
+
+.title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
 }
 
@@ -59,9 +113,24 @@ h3 {
   font-size: 2rem;
 }
 
+.options.headers {
+  height: 2rem;
+}
+
   /* Header Mobile Section */
 
 /* Banner Section */
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.information.landing {
+  padding-left: 1.5rem;
+}
 
 .landing .button {
   background-color: black;
@@ -75,13 +144,73 @@ h3 {
 
 /* Welcome Section */
 
+.welcome h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.welcome .quote {
+  padding-bottom: 2rem;
+}
+
   /* Welcome Mobile Section */
 
 /* Start Learning Section */
 
+.education {
+  padding: 0rem 4.5rem 2rem 4.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.degrees {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.degree {
+  width: 30%;
+}
+
+.degree img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.degree h4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.courses {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.center {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
   /* SL Mobile Section */
 
 /* Thesis Exhibit Section */
+
+.thesis-exhibit {
+  display: block;
+}
+
+.urban {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
 
   /* Thesis Mobile Section */
 
