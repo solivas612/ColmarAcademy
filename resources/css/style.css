@@ -27,7 +27,7 @@ html {
   font-family: "Bitter", sans-serif
 }
 
-.header, .footer, .about, .exhibit {
+.header, .footer, .banner, .about, .exhibit {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -62,6 +62,10 @@ html {
   max-width: 60%;
 }
 
+.welcome .media, .exhibit .media {
+  background-color: #00bfff;
+}
+
 .media img {
   width: 100%;
 }
@@ -94,10 +98,16 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
+  background-color: #b22222;
 }
 
-h1, h2, h3, h4 {
+.title h2 {
+  color: #00bfff;
+}
+
+h1, h2, h4 {
   font-weight: bold;
+  color: rgb(178,34,34);
 }
 
 h2, h3, h5, p {
@@ -116,10 +126,15 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  color: #00bfff;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .mobile {
@@ -127,22 +142,43 @@ h4 {
 }
 
 .alt {
-  background-color: lightgray;
+  background-color: #1e90ff;
+  color: #b22222;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 810px) {
+
+  html {
+    overflow-x: hidden;
+  }
 
   .dsktp {
     display: none;
   }
 
   .alt {
-    background-color: red;
+    background-color: #00bfff;
   }
 
   .mobile {
     display: block;
   }
+
+  .banner, .welcome, .about {
+    flex-direction: column;
+  }
+
+  .media {
+    margin: 0rem;
+    padding: 0rem;
+    min-width: 100%;
+  }
+
+  .about .info {
+    width: 90%;
+    padding-left: 2rem;
+  }
+
 }
 
 /* Header Section */
@@ -151,24 +187,39 @@ h4 {
   height: 4rem;
 }
 
-.options.headers {
+.options.heading {
   height: 2rem;
+}
+
+h3.colmar {
+  color: #1e90ff;
 }
 
   /* Header Mobile Section */
 
+  @media only screen and (max-width: 810px) {
+    .options.heading {
+      width: 100%;
+    }
+  }
+
 /* Banner Section */
 
 .banner {
-  width: 100%;
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .information.landing {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkblue;
 }
 
 .landing .button {
@@ -184,6 +235,25 @@ h4 {
 
   /* Banner Mobile Section */
 
+  @media only screen and (max-width: 810px) {
+
+    h1 {
+      font-size: 3rem;
+      padding-top: 0rem;
+    }
+
+    .information {
+      width: 90%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .welcome .about .info {
+      margin-bottom: 1rem;
+    }
+  }
+
 /* Welcome Section */
 
 .welcome h2 {
@@ -197,10 +267,14 @@ h4 {
 
   /* Welcome Mobile Section */
 
+    @media only screen and (max-width: 810px)  {
+
+    }
+
 /* Start Learning Section */
 
 .education {
-  padding: 0rem 4.5rem 2rem 4.5rem;
+  padding: 1rem 4.5rem 2rem 4.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -248,6 +322,47 @@ h4 {
 }
   /* SL Mobile Section */
 
+  @media only screen and (max-width: 810px) {
+
+    .education {
+      padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .degrees {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .degrees.one {
+      padding-bottom: 0rem;
+    }
+
+    .degree {
+      width: 90%;
+      margin-bottom: 0.5rem;
+    }
+
+    .degree:first-child {
+      background-color: green;
+    }
+
+    .description {
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    .degree h4 {
+      padding-bottom: 0rem;
+      padding-top: 0rem;
+    }
+
+    .center {
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+
+  }
+
 /* Thesis Exhibit Section */
 
 .thesis-exhibit {
@@ -259,16 +374,44 @@ h4 {
 }
 
 .urban {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
   /* Thesis Mobile Section */
+
+  @media only screen and (max-width: 810px) {
+
+    .thesis-exhibit .title {
+      padding-bottom: 1rem;
+    }
+
+    .video {
+      padding-bottom: 2rem;
+    }
+  }
 
 /* Footer Section */
 
 .footer {
   height: 8rem;
+  align-items: center;
+}
+
+.footer .box {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
   /* Footer Mobile Section */
+
+  @media only screen and (max-width: 810px) {
+
+    .footer {
+      height: auto;
+    }
+
+    .footer.alt {
+      background-color: inherit;
+    }
+  }
